@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raazroom | College Confessions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #111827, #4c1d95, #be185d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255,255,255,0.97);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 38px;
+      font-weight: 800;
+      color: #7c3aed;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      text-align: center;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin: 16px 0 7px;
+      color: #222;
+    }
+
+    select,
+    textarea,
+    input {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 13px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    select:focus,
+    textarea:focus,
+    input:focus {
+      border-color: #7c3aed;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .anonymous {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .anonymous input {
+      width: auto;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 15px;
+      border: none;
+      border-radius: 13px;
+      background: linear-gradient(90deg, #7c3aed, #db2777);
+      color: white;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">Raazroom</div>
+
+    <p class="tagline">
+      College confessions — anonymously & honestly 🤫
+    </p>
+
+    <form action="https://formsubmit.co/l2965045@gmail.com" method="POST">
+
+      <input type="hidden" name="_subject" value="New Raazroom Confession 💌">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label>🏫 Your Branch</label>
+      <select name="Branch" required>
+        <option value="">Select your branch</option>
+        <option>Computer Science / CSE</option>
+        <option>Information Technology / IT</option>
+        <option>Electrical Engineering / EE</option>
+        <option>Electronics & Communication / ECE</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Other</option>
+      </select>
+
+      <label>❤️ Confession Type</label>
+      <select name="Type" required>
+        <option value="">Select type</option>
+        <option>Crush</option>
+        <option>Love</option>
+        <option>Friendship</option>
+        <option>Couple</option>
+        <option>Funny</option>
+        <option>Secret</option>
+        <option>College Life</option>
+        <option>Other</option>
+      </select>
+
+      <label>✍️ Your Confession</label>
+      <textarea
+        name="Confession"
+        placeholder="Write your confession here..."
+        required></textarea>
+
+      <label>👤 Name (Optional)</label>
+      <input
+        type="text"
+        name="Name"
+        placeholder="Leave blank to stay anonymous">
+
+      <div class="anonymous">
+        <input type="checkbox" checked disabled>
+        <span>My confession will be submitted anonymously</span>
+      </div>
+
+      <button type="submit">
+        🚀 Submit Confession
+      </button>
+
+      <p class="note">
+        Your confession will be sent privately to the page owner.
+      </p>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
